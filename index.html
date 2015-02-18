@@ -7,14 +7,23 @@
 </head>
 
 <body>
-<div class="app">
-    <div class="toolbar noselect">
-        <button type="button" class="clear" style="float:right">Clear completed</button>
-        <input type="text" name="token" placeholder="Enter token" size="40" value="">
-    </div>
-    <ul class="tasks"></ul>
-</div>
+    <div class="login-popup">
 
-<script type="text/javascript" src="src/app.js"></script>
+    </div>
+
+    <div class="app">
+        <div class="toolbar noselect">
+            <button type="button" class="clear" style="float:right">Clear completed</button>
+            <div class="login-status">
+                <span class="username"></span>
+                <a class="login" href="#">Login</a>
+                <a class="logout hidden" href="#">Logout</a>
+            </div>
+
+        </div>
+        <ul class="tasks"></ul>
+    </div>
+
+    <script type="text/javascript" src="src/app.js"></script>
 </body>
 </html>

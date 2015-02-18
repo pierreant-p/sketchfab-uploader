@@ -32,6 +32,8 @@ var DndTargetView = Backbone.View.extend({
         e.stopPropagation();
         e.preventDefault();
 
+        console.log( 'drop' );
+
         this.$el.removeClass('over');
 
         var files = e.originalEvent.dataTransfer.files;

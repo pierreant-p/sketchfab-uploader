@@ -19,6 +19,7 @@ var TaskListView = Backbone.View.extend({
     },
 
     onTaskAdded: function(model) {
+        console.log( 'task added' );
         var taskView = new TaskView({
             model: model
         });
